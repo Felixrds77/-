@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-br"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>??????</title> 
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #3b8eed, #ff758c);
+            color: #fff;
+            text-align: center;
+        }
+        .texto {
+            max-width: 600px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-style: italic;
+            text-align: center;
+            white-space: pre-wrap;
+            font-family: 'Monotype corsiva', cursive;
+            font-size: 30px;
+            /* Efeito radiante */
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .yes {
+            background-color: #4caf50;
+            color: #fff;
+        }
+        .yes:hover {
+            background-color: #45a049;
+        }
+        .no {
+            background-color: #f44336;
+            color: #fff;
+        }
+        .no:hover {
+            background-color: #d32f2f;
+        }
+.heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(-45deg);
+      animation: float 4s infinite ease-in-out;
+    }
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+      }
+      100% {
+        transform: translateY(-10%) scale(0.5);
+      }
+    }
+.inframe {
+	margin-top: -550px;
+}
+    </style> 
+ </head> 
+ <body> 
+<script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+<p>
+<p>
+<iframe width="270" height="315" 
+    src="D:\Users\ADCB04LOG\Desktop\FELIX\nosso-video-oceano.mp4"
+     title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+  <div class="texto">
+    Hoje quero abrir meu coração para você, porque não consigo mais guardar tudo o que sinto, Desde que você entrou na minha vida, tudo ficou mais bonito.</BR> Seu sorriso é como o sol, iluminando até os dias mais nublados, Sua presença me dá paz, ao mesmo tempo meu coração dispara só de ouvir sua voz ou de estar perto de você.</br> Eu admiro tudo em você, sua força, sua leveza, a forma como você faz até as coisas simples parecerem extraordinárias.</br> Você é única, e a cada dia que passa, fico mais certo de que quero caminhar ao seu lado, compartilhando sonhos, conquistas e até aqueles momentos simples, como uma boa conversa ou um abraço apertado.</br> Preta, você é muito mais do que especial para mim. Não sei se consigo colocar em palavras tudo o que você significa, mas quero que saiba, você é meu ponto de paz e meu refúgio. Eu quero te fazer feliz, cuidar de você e ser aquela pessoa em quem você sempre possa confiar.</br> Então hoje, decide arriscar e te perguntar: 
+  </div> 
+  <div class="container"> 
+   <h1>Quer namorar comigo?</h1> 
+   <p>você aceita ser meu par?</p> 
+   <div class="buttons"> <button class="yes" onclick="alert('Eu sabia que você ia dizer sim! ❤️')">Sim</button> <button class="no" onclick="alert('esta opção não existe')">Não</button>
+   </div> 
+  </div>
+<p>
+<p>
+ </body>
+</html>
